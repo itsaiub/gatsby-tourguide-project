@@ -17,9 +17,9 @@ const NavBar = () => {
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
-          <h1 className={styles.logo}>
+          <Link to="/" className={styles.logo}>
             Tour<span style={{ color: "#3fd0d4" }}>Guide</span>
-          </h1>
+          </Link>
           <button type="button" className={styles.logoBtn} onClick={toggleNav}>
             <FaAlignRight className={styles.logoIcon} />
           </button>
@@ -34,7 +34,12 @@ const NavBar = () => {
           {links.map((item, index) => {
             return (
               <li key={index}>
-                <Link to={item.path}>{item.text.toUpperCase()}</Link>
+                <Link
+                  to={item.path}
+                  activeStyle={{ color: "#3fd0d4", border: "2px solid" }}
+                >
+                  {item.text.toUpperCase()}
+                </Link>
               </li>
             )
           })}
