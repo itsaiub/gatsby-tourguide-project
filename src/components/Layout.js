@@ -6,11 +6,11 @@ import "./layout.css"
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <main>
       <NavBar />
       {children}
       <Footer />
-    </>
+    </main>
   )
 }
 
