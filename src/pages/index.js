@@ -1,8 +1,26 @@
 import React from "react"
+import { Helmet } from "react-helmet"
+
 import Layout from "../components/Layout"
+import SimpleHero from "../components/SimpleHero"
+import Banner from "../components/Banner"
+import { Link } from "gatsby"
 
 export default () => (
   <Layout>
-    <h1>Hello world!</h1>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Home - TourGuide</title>
+    </Helmet>
+    <SimpleHero>
+      <Banner
+        title="continue exploring"
+        info="Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, consectetur!"
+      >
+        <Link className="btn-white" to="/tours">
+          explore tours
+        </Link>
+      </Banner>
+    </SimpleHero>
   </Layout>
 )
