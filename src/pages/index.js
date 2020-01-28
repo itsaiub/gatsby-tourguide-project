@@ -1,6 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
@@ -19,9 +20,9 @@ export default ({ data: { defaultBcg } }) => (
         title="continue exploring"
         info="Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, consectetur!"
       >
-        <Link className="btn-white" to="/tours">
+        <AniLink className="btn-white" to="/tours">
           explore tours
-        </Link>
+        </AniLink>
       </Banner>
     </StyledHero>
     <About />

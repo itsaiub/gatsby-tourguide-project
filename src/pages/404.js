@@ -1,6 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import styles from "../css/error.module.css"
 import Layout from "../components/Layout"
@@ -15,9 +15,9 @@ const error = () => {
       </Helmet>
       <header className={styles.error}>
         <Banner title="oops it's a dead end">
-          <Link to="/" className="btn-white">
+          <AniLink to="/" className="btn-white">
             Back to Homepage
-          </Link>
+          </AniLink>
         </Banner>
       </header>
     </Layout>
