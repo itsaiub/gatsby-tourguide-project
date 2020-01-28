@@ -18,7 +18,7 @@ const NavBar = () => {
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
           <Link to="/" className={styles.logo}>
-            Tour<span style={{ color: "#3fd0d4" }}>Guide</span>
+            Tour<span style={{ color: "#402775" }}>Guide</span>
           </Link>
           <button type="button" className={styles.logoBtn} onClick={toggleNav}>
             <FaAlignRight className={styles.logoIcon} />
@@ -36,7 +36,7 @@ const NavBar = () => {
               <li key={index}>
                 <Link
                   to={item.path}
-                  activeStyle={{ color: "#3fd0d4", border: "2px solid" }}
+                  activeStyle={{ color: "#402775", border: "2px solid" }}
                 >
                   {item.text.toUpperCase()}
                 </Link>
