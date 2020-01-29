@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
+import Tours from "../components/Tours/Tours"
 
 const tours = ({ data: { defaultBcg } }) => {
   return (
@@ -13,6 +14,7 @@ const tours = ({ data: { defaultBcg } }) => {
         <title>Tours - TourGuide</title>
       </Helmet>
       <StyledHero img={defaultBcg.childImageSharp.fluid}></StyledHero>
+      <Tours />
     </Layout>
   )
 }
