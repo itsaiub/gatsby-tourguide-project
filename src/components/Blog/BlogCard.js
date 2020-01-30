@@ -5,7 +5,7 @@ import Image from "gatsby-image"
 import styles from "../../css/blog-card.module.css"
 
 const BlogCard = ({ blog }) => {
-  const { title, published, createdAt, slug, image } = blog
+  const { title, published, slug, image } = blog
   return (
     <article className={styles.blog}>
       <div className={styles.imgContainer}>

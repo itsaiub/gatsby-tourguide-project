@@ -11,7 +11,6 @@ const getPostQuery = graphql`
       edges {
         node {
           published(formatString: "MMMM Do, YYYY")
-          createdAt(formatString: "LLLL")
           title
           slug
           id: contentful_id
@@ -28,7 +27,6 @@ const getPostQuery = graphql`
 
 const BlogList = () => {
   const { posts } = useStaticQuery(getPostQuery)
-  console.log(posts)
 
   return (
     <section className={styles.blog}>
